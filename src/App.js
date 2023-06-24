@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Navbar } from "./Component/Navbar/Navbar";
 import { Home } from "./Pages/Home/Home";
+import { SinglePost } from "./Pages/SinglePost/SinglePost";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        {/* <Route to="/post/:id"/> */}
+        <Route path="/post/:id" element={<SinglePost/>}/>
       </Routes>
     </div>
   );
