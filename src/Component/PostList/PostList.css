@@ -1,0 +1,55 @@
+.postilist-container {
+  width: 100%;
+}
+.postlist-card {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  background-color: var(--secondary-accent-color);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.postlist-vote {
+  color: var(--secondary-text-color);
+}
+.postlist-vote > div:nth-child(1),
+.postlist-vote > div:nth-child(2) {
+  color: var(--accent-color);
+}
+.postlist-vote-btn {
+  font-size: 30px;
+}
+
+.postlist-info-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.postlist-info-header > span {
+  color: var(--secondary-text-color);
+}
+.postlist-info-header > span > span {
+  color: var(--accent-color);
+}
+
+.postlist-info-content > h2 {
+  margin-bottom: 5px;
+}
+/* .postlist-info-content > p {
+  margin-bottom: 0;
+} */
+.postilists-info-tags{
+  padding:5px 10px;
+  font-size: small;
+  color:var(--accent-color);
+  background-color: var(--tag-accent-color);
+  margin-left: 5px;
+  border-radius:4px;
+}
+
+.postlist-actions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

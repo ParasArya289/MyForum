@@ -1,10 +1,11 @@
 import { MainLayout } from "../../Component/MainLayout/MainLayout";
+import { PostList } from "../../Component/PostList/PostList";
 import "./Home.css";
 
 export const Home = () => {
   return (
     <MainLayout>
-      {/* <p className="home-p">Home</p> */}
+      <PostList />
     </MainLayout>
   );
 };
