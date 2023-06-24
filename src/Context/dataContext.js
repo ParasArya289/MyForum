@@ -41,7 +41,7 @@ export const DataContext = ({ children }) => {
   console.log(data);
 
   return (
-    <dataContext.Provider value={{user, data, sortedData, setSort, voteHandler }}>
+    <dataContext.Provider value={{user, data, sortedData, sort,setSort, voteHandler }}>
       {children}
     </dataContext.Provider>
   );

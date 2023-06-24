@@ -2,7 +2,7 @@ import "./Sortbar.css";
 import { BiSort } from "react-icons/bi";
 import { useData } from "../../Context/dataContext";
 export const SortBar = () => {
-  const { setSort } = useData();
+  const { sort,setSort } = useData();
   return (
     <div className="sortbar">
       <h2>Sort by</h2>
@@ -10,7 +10,7 @@ export const SortBar = () => {
         <span>
           <BiSort />
         </span>
-        <select onChange={(e) => setSort(e.target.value)}>
+        <select value={sort} onChange={(e) => setSort(e.target.value)}>
           <option disabled defaultChecked>
             Sort
           </option>
