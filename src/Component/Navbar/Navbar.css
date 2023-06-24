@@ -1,0 +1,14 @@
+.navbar-forum {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--secondary-accent-color);
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.1);
+  z-index: 99999999;
+}
+.navbar-forum > p{
+    color: var(--accent-color);
+    font-weight: var(--fw-bold);
+    padding: 20px;
+}

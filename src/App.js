@@ -1,9 +1,16 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import { Navbar } from "./Component/Navbar/Navbar";
+import { Home } from "./Pages/Home/Home";
 
 function App() {
   return (
     <div className="App">
-      <h1>Machine coding round</h1>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        {/* <Route to="/post/:id"/> */}
+      </Routes>
     </div>
   );
 }

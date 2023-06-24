@@ -1,0 +1,31 @@
+.mainLayout {
+  display: grid;
+  grid-template-columns: 400px auto 400px;
+  align-items: center;
+}
+
+.mainLayout-children-content {
+  margin: 0;
+  padding: 0;
+}
+.mainLayout-children > p {
+  font-size: x-large;
+  font-weight: var(--fw-bold);
+  padding-top: 12px;
+}
+.mainLayout-sidebar-content {
+  position: fixed;
+}
+.mainLayout-sidebar {
+  display: flex;
+  justify-content: center;
+}
+.mainLayout-sortbar {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.mainLayout-children-content {
+  display: flex;
+  justify-content: center;
+}
