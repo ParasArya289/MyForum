@@ -2,7 +2,6 @@
   width: 100%;
 }
 .postlist-card {
-  width: 100%;
   display: flex;
   gap: 20px;
   background-color: var(--secondary-accent-color);
@@ -12,10 +11,15 @@
 
 .postlist-vote {
   color: var(--secondary-text-color);
+  cursor: pointer;
+  user-select: none;
 }
 .postlist-vote > div:nth-child(1),
 .postlist-vote > div:nth-child(2) {
   color: var(--accent-color);
+}
+.postlist-vote-dangerous{
+  color:var(--dangerous-text-color)
 }
 .postlist-vote-btn {
   font-size: 30px;
@@ -36,9 +40,7 @@
 .postlist-info-content > h2 {
   margin-bottom: 5px;
 }
-/* .postlist-info-content > p {
-  margin-bottom: 0;
-} */
+
 .postilists-info-tags{
   padding:5px 10px;
   font-size: small;

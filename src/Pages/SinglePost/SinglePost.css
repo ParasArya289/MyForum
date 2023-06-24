@@ -6,7 +6,6 @@
   display: flex;
   gap: 10px;
   padding: 20px;
-  width: 100%;
 }
 .comment-info > span {
   font-weight: var(--fw-bold);
@@ -25,4 +24,13 @@
     display: flex;
     justify-content: space-between;
     padding:10px 0;
+}
+
+.singlepost-header{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding:10px;
+    font-weight: var(--fw-regular);
+    cursor: pointer;
 }

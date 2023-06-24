@@ -1,16 +1,14 @@
-import { forumData } from "../../db";
 import "./PostList.css";
-import { BiComment } from "react-icons/bi";
-import { AiOutlineShareAlt } from "react-icons/ai";
-import { BsBookmark } from "react-icons/bs";
+
 import { useNavigate } from "react-router-dom";
 import { PostCard } from "../PostCard/PostCard";
+import { useData } from "../../Context/dataContext";
 
 export const PostList = () => {
-  const navigate = useNavigate();
+  const { sortedData } = useData();
   return (
     <div className="postilist-container">
-      {forumData.posts?.map((post) => (
+      {sortedData?.map((post) => (
         <PostCard post={post} />
       ))}
     </div>
